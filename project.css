@@ -1,0 +1,190 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f9fa; /* Light grey background color */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333; /* Dark grey border at the bottom */
+    position: relative; /* Positioning context for logo and social media icons */
+}
+
+header h1 {
+    font-size: 36px; /* Large font size for the heading */
+    color: #333; /* Dark grey text color */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px;
+}
+
+/* Logo styles */
+header .logo {
+    position: absolute; /* Position the logo absolutely */
+    top: 20px; /* Distance from the top of the header */
+    right: 20px; /* Distance from the left of the header */
+    width: 200px; /* Set the width of the logo */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between items */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark grey text color */
+    font-size: 18px; /* Medium font size for links */
+    padding: 10px 20px; /* Padding for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #333; /* Dark grey background on hover */
+    color: #fff; /* White text color on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Project section styles */
+#projects {
+    padding: 40px 20px; /* Padding around the project section */
+    text-align: center; /* Center align the text */
+    background-color: #f0f0f0; /* Light grey background */
+}
+
+#projects h2 {
+    font-size: 32px; /* Large font size for the heading */
+    color: #333; /* Dark grey text color */
+    margin-bottom: 20px; /* Margin below the heading */
+}
+
+.project {
+    margin: 20px auto; /* Center projects and add margin around each project */
+    padding: 20px; /* Padding inside each project */
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 80%; /* Set a width for the projects */
+    text-align: left; /* Align text to the left */
+}
+
+.project-images {
+    display: flex; /* Use flexbox for horizontal layout */
+    overflow: hidden; /* Hide overflow for the sliding animation */
+    margin-bottom: 20px; /* Margin below the images */
+}
+
+.project-images img {
+    width: 33.33%; /* Each image takes up one-third of the container */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
+}
+
+.project-images:hover img {
+    transform: translateX(-100%); /* Slide images to the left on hover */
+}
+
+.project h3 {
+    font-size: 24px; /* Medium font size for the project title */
+    color: #333; /* Dark grey text color */
+    margin-bottom: 10px; /* Margin below the title */
+}
+
+.project p {
+    font-size: 16px; /* Small font size for the project description */
+    color: #666; /* Grey text color */
+}
+
+
+/* Social media section */
+.social-media {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.social-media h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    color: #333;
+    font-size: 36px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #2a9d8f;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2a9d8f; /* Greenish-blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding around the footer content */
+    text-align: center; /* Center align the text */
+    border-top: 2px solid #333; /* Dark grey border at the top */
+    margin-top: 20px; /* Add margin at the top */
+}
+
+footer p {
+    font-size: 16px; /* Medium font size for the paragraph */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px; /* Slightly smaller font size for tablets */
+    }
+    nav ul {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 10px; /* Less space between items */
+    }
+    main section#home {
+        padding: 100px 20px; /* Adjust padding for tablets */
+    }
+    .project {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px; /* Even smaller font size for phones */
+    }
+    nav ul li a {
+        font-size: 16px; /* Smaller font size for links on phones */
+    }
+    main section#home h2 {
+        font-size: 24px; /* Smaller font size for subheading */
+    }
+    main section#home p {
+        font-size: 16px; /* Smaller font size for paragraph */
+    }
+    main section#home {
+        padding: 80px 20px; /* Further adjust padding for phones */
+    }
+    .project {
+        width: 100%; /* Full width for phones */
+    }
+    header .logo {
+        width: 50px; /* Adjust width for phones */
+        top: 5px; /* Adjust position for phones */
+        right: 5px;
+    }
+    .social-media a {
+        font-size: 30px;
+    }
+}

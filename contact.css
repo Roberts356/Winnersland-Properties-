@@ -1,0 +1,173 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f9fa; /* Light grey background color */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333; /* Dark grey border at the bottom */
+}
+
+header h1 {
+    font-size: 36px; /* Large font size for the heading */
+    color: #333; /* Dark grey text color */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px;
+}
+
+/* Logo styles */
+header .logo {
+    position: absolute; /* Position the logo absolutely */
+    top: 20px; /* Distance from the top of the header */
+    right: 20px; /* Distance from the right of the header */
+    width: 200px; /* Set the width of the logo */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between items */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark grey text color */
+    font-size: 18px; /* Medium font size for links */
+    padding: 10px 20px; /* Padding for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #333; /* Dark grey background on hover */
+    color: #fff; /* White text color on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Main section */
+main {
+    padding: 20px;
+    
+}
+
+main section#contact {
+    padding: 50px 20px; /* Adjust padding around the content */
+    background: #f8f9fa; /* Light  background color */
+    color: #333; /* Dark grey text color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+main section#contact h2 {
+    font-size: 36px; /* Large font size for the heading */
+    color: #2a9d8f; /* Greenish-blue color */
+    margin-bottom: 20px;
+}
+
+main section#contact p {
+    font-size: 18px; /* Medium font size for the paragraph */
+    margin-bottom: 20px;
+}
+
+main section#contact h3 {
+    font-size: 28px; /* Medium font size for subheading */
+    color: #2a9d8f; /* Greenish-blue color */
+    margin-bottom: 20px;
+}
+
+main section#contact ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+main section#contact ul li {
+    font-size: 18px; /* Medium font size for list items */
+    margin-bottom: 10px;
+}
+
+/* Social media styles */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #333; /* Dark grey text color */
+    font-size: 24px; /* Large font size for icons */
+    margin: 0 10px; /* Margin between icons */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-media a:hover {
+    color: #2a9d8f; /* Greenish-blue color on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #2a9d8f; /* Greenish-blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding around the footer content */
+    text-align: center; /* Center align the text */
+    border-top: 2px solid #333; /* Dark grey border at the top */
+    margin-top: 20px; /* Add margin at the top */
+}
+
+footer p {
+    font-size: 16px; /* Medium font size for the paragraph */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px; /* Slightly smaller font size for tablets */
+    }
+    nav ul {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 10px; /* Less space between items */
+    }
+    header .logo {
+        width: 50px; /* Adjust width for tablets */
+        top: 5px; /* Adjust position for tablets */
+        right: 5px;
+    }
+    main section#contact {
+        padding: 30px 20px; /* Adjust padding for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px; /* Even smaller font size for phones */
+    }
+    nav ul li a {
+        font-size: 16px; /* Smaller font size for links on phones */
+    }
+    main section#contact h2 {
+        font-size: 28px; /* Smaller font size for heading */
+    }
+    main section#contact p,
+    main section#contact ul li {
+        font-size: 16px; /* Smaller font size for paragraph and list items */
+    }
+    main section#contact {
+        padding: 20px 10px; /* Adjust padding for phones */
+    }
+    header .logo {
+        width: 50px; /* Adjust width for phones */
+        top: 5px; /* Adjust position for phones */
+        right: 5px;
+    }
+}
